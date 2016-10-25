@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from my_prj.profile.models import User
 from my_prj.test_utils import *
 
 
@@ -20,4 +20,3 @@ class UserFactory(factory.DjangoModelFactory):
         user = manager.create_user(*args, **kwargs)
         user.initial_password = kwargs['password']
         return user
-

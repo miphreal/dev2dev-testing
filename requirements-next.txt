@@ -1,6 +1,7 @@
 apipkg==1.4
 coverage==4.2
 Django==1.10.2
+djangorestframework==3.5.1
 execnet==1.4.1
 factory-boy==2.7.0
 fake-factory==0.7.2
@@ -19,6 +20,7 @@ pytest-flakes==1.0.1
 pytest-pep8==1.0.6
 pytest-xdist==1.15.0
 python-dateutil==2.5.3
+pytz==2016.7
 six==1.10.0
 spark-parser==1.4.0
 tox==2.4.0
