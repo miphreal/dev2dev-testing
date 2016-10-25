@@ -45,6 +45,8 @@ def test_data_structure(response):
         'functionality': has_entries({
             'speed': any_of('slow', 'sloow', 'slooow'),
             'AI': True,
-            'languages': contains_inanyorder(
-                has_entry('id', 'en'),
-                has_entry('id', 'ru'))})}))
+            'languages': all_of(
+                has_length(2),
+                contains_inanyorder(
+                    has_entry('id', 'en'),
+                    has_entry('id', 'ru')))})}))
